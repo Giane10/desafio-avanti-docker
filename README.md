@@ -10,6 +10,18 @@ Aqui está o sistema orquestrado funcionando em ambiente local:
 ## 🏗️ Arquitetura do Projeto
 O sistema é composto por três serviços que comunicam entre si em redes isoladas:
 
+
+```mermaid
+graph TD
+    subgraph "Docker Network: backend"
+        A[Nginx: Frontend] -->|Requisição /pessoas| B[API Python: FastAPI]
+        A -->|Requisição /saudacao| C[API Go: Backend]
+        B --> D[(SQLite/Database)]
+    end
+    
+    U[Navegador do Usuário] -->|Acessa localhost:80| A
+```
+
 - **Frontend**: Servidor Nginx servindo uma interface estática.
 - **API de Pessoas**: Microserviço em **Python (FastAPI)** que gera nomes aleatórios.
 - **API de Saudações**: Microserviço em **Go** que gera saudações aleatórias.
