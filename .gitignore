@@ -1,0 +1,23 @@
+# --- IDEs e Sistema ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Python (ms-pessoas-aleatorias) ---
+**/__pycache__/
+**/*.py[cod]
+**/.venv/
+**/env/
+**/*.db
+
+# --- Go (ms-saudacoes-aleatorias) ---
+**/ms-saudacoes-aleatorias/main
+**/ms-saudacoes-aleatorias/bin/
+**/*.exe
+**/*.test
+
+# --- Ferramentas de Dev (Geral) ---
+.devbox/
+devbox.lock
+.ropeproject/
