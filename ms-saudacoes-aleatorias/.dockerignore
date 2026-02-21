@@ -1,0 +1,7 @@
+Dockerfile
+.dockerignore
+.git
+.gitignore
+# Ignora o executável local tiver compilado no Windows
+main
+bin/

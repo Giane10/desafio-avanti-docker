@@ -21,3 +21,5 @@ Thumbs.db
 .devbox/
 devbox.lock
 .ropeproject/
+
+.gitignore
